@@ -1,0 +1,64 @@
+//every array method
+
+var number=[1,2,3,4]
+console.log(task1(number))
+
+function task1(array)
+{
+   var count=0
+   for(var i=0;i<array.length;i++)
+   {
+      if (array[i]>=1){
+         count++
+      }
+   }
+   if (count==array.length){
+       return true
+   }
+   else{
+       return false
+   }
+}
+//filter array method
+console.log(task2(number))
+
+function task2(array){
+    var a=[]
+    for(var i=0;i<array.length;i++)
+   {
+      if (array[i]>1){
+         a.push(array[i])
+      }
+   }
+   return a
+
+}
+// find array method
+console.log(task3(number))
+
+function task3(array){
+    for(var i=0;i<array.length;i++)
+   {
+      if (array[i]>1){
+         return array[i]
+         break
+      }
+   }
+
+}
+
+//findindex
+
+console.log(task4(number))
+
+function task4(array){
+    for(var i=0;i<array.length;i++)
+   {
+      if (array[i]>1){
+         return i
+         break
+      }
+   }
+
+}
+
